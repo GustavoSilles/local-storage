@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: Georgia;
+}
+
+header{
+    padding: 20px;
+    background-color: #a30850;
+    color: #fff;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    background-color: #c20b42;
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.nav-item a:hover{
+    color: rgb(0, 26, 255);
+}
+
+.nav-item-active{
+    color: rgb(38, 0, 255) !important;
+}
+
+.container{
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    padding: 20px;
+    border: 2px solid #fd00be;
+    border-radius: 25px;
+}
+
+.form{
+    width: 25%;
+}
+
+.input-controler{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-controler input{
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #a3086f;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+.input-controler input:focus{
+    background-color: #dcc8eb;
+    
+}    
+
+.input-controler input::placeholder{
+    color: #000000;
+}
+
+.btn{
+    width: 98%;
+    background-color: #750541;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 3px solid #a30849;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #e257cb; 
+    color: #75053d;
+}
+
+@media screen and (max-width:500px){
+    nav{
+        display: block;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .container{
+        padding: 10px;
+    }
+
+    .form{
+        width: 85%;
+    }
+}
